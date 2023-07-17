@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#4f46e5">
+    <meta property="og:image" content="ogimage.jpeg" />
+    <link href="ogimage.jpeg" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #4f46e5;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            color: #4f46e5;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+        footer {
+            background-color: #4f46e5;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kerala State Road Transport Corporation</h1>
+        <h2>Form Submission (Google Sheet)</h2>
+    </div>
+    <script src="https://sheetdb.io/s/f/nrbnwp5ess5bc.js"></script>
+
+    <footer>
+        &copy; 2023  Designed and Developed by Kunjappan. All rights reserved.
+    </footer>
+
+    <script src="./service-worker.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(registration => {
+                console.log('Service Worker registered:', registration);
+              })
+              .catch(error => {
+                console.log('Service Worker registration failed:', error);
+              });
+          });
+        }
+      </script>
+      
+</body>
+</html>
